@@ -1,0 +1,39 @@
+{% load static %}
+  <head>
+    {% block extra_css %}
+    <link rel="stylesheet" href="{% static "./css/contacts.css" %}">
+    {% endblock extra_css %}
+  </head>
+      <!-- contact_form_section -->
+      <section id="contact">
+        <div class="container-lg my-3  p-lg-5 p-3 d-flex flex-column justify-content-center " style="height: 650px;">
+          <h4 class="text-white ps-2"><span class="htag">/</span>contact-me</h4>
+          <p class="text-secondary ps-2">I’m always open to new opportunities and collaborations. Feel free to reach out with any questions, ideas, or just to connect. Looking forward to hearing from you!</p>
+          <form action="{% url 'home' %}" method="POST">
+              {% csrf_token %}
+            <div class="row  p-2">
+              <div class="col pe-1">
+                <input type="text" name="name" class="form-control rounded-0 bg-transparent custom-placeholder text-white border-secondary" placeholder="Name">
+              </div>
+              <div class="col">
+                <input type="text" name="email"  class="form-control rounded-0 bg-transparent custom-placeholder text-white border-secondary" placeholder="Email">
+              </div>
+            </div>
+            <div class="row  p-2">
+              <div class="col">
+                <input type="text" name="subject" class="form-control bg-transparent rounded-0 text-white custom-placeholder border-secondary" placeholder="Title">
+              </div>
+            </div>
+            <div class="row  p-2">
+              <div class="col">
+                <textarea name="message" id="" class="form-control bg-transparent rounded-0 border border-secondary custom-placeholder text-white" placeholder="Message" style="height: 110px;"></textarea>
+              </div>
+            </div>
+            <div class="row  p-2">
+              <div class="col">
+                <button class="btn btn-outline-primary text-white rounded-0 " type="submit">Send</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>

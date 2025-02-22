@@ -1,0 +1,57 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block body %}
+      <!-- home_section -->
+      {% if messages %}
+      {% for message in messages %}
+        {% if message.tags == 'success' %}
+          <div class="alert alert-success rounded-0">
+            {{ message }}
+          </div>
+        {% elif message.tags == 'error' %}
+          <div class="alert alert-danger rounded-0">
+            {{ message }} <a href="#contact" class="text-decoration-none"> Click here </a>to fill.
+          </div>
+        {% endif %}
+      {% endfor %}
+    {% endif %}
+      
+      <div class="container border" id="home">
+        <div class="d-md-inline-flex align-items-center ">
+
+          <div class="mt-4 mb-0 mx-lg-5 flex-grow-1">
+            <div class="h3 text-white">VamsiKrishna is a <span class="htag">Back-End Developer</span> and <span class="htag">Front-End Developer</span></div>
+            <p class="text-secondary ">Transforming ideas into interactive web solutions with Django, MySQL, and the magic of HTML, CSS, and JavaScript.</p>
+            <a href="#" class="btn btn-outline-primary custom-btn border-primary text-white rounded-0 ">Contact me!!</a>
+          </div>
+          
+          <div class="text-center">
+            <img src="{% static "./img/dhero.png" %}" class="p-1" alt="Img not found" style="width: 280px; height: 290px;"><br>
+            <div class="d-inline text-secondary  border border-bottom p-1"><span class="bg-primary text-primary">. </span>&#8203; Vamsikrishna nagidi</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container border">
+        <div class="d-flex flex-fill flex-column mt-4 mb-0 mx-lg-5">
+          <div class="border-top my-3 border-secondary"></div>
+          <div class="h5 text-white">
+            Hi, I’m <span class="htag">Vamsi Krishna Nagidi</span>, a recent IT graduate from <span class="htag">Anil Neerukonda Institute Of Technology and Sciences</span>.
+          </div>
+          <p class="text-secondary">
+            Skilled in back-end (Django, MySQL) and front-end (Bootstrap, JavaScript, HTML, CSS) development. Proficient in Java and Python with experience in Git. Published research on Blockchain-based Certificate Validation. Open to internships, job opportunities, and projects.
+          </p>
+          <div class="d-inline-block ">
+            <a href="#" class="btn btn-outline-primary text-white rounded-0 ms-0 m-2">Download CV</a>
+            <a href="#" class="btn btn-outline-primary text-white rounded-0 ms-0 m-2">LinkedIn</a>
+            <a href="#" class="btn btn-outline-primary text-white rounded-0 ms-0 m-2">GitHub</a>
+            <a href="#" class="btn btn-outline-primary text-white rounded-0 ms-0 m-2">Email Me</a>
+          </div>
+        </div>
+      </div>
+
+      {% include 'projects.html' %}
+      {% include 'about.html' %}
+      {% include 'contacts.html' %}
+
+{% endblock body %}

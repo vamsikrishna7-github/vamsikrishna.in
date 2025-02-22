@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap');  
+*{
+    font-family: Fira Code;
+    font-style: normal;
+}
+.navbar{
+    background-color: black;
+}
+
+div .custom-color{
+    color: white;
+}
+
+.htag{
+    color: #5F86FA;
+
+}
+
+.card{
+    color: #282C33;
+}
+
+.transparent-table th, .transparent-table td {
+    background-color: transparent !important;
+}
+section {
+    scroll-margin-top: 60px; 
+}
+html {
+    scroll-behavior: smooth;
+}
+.navbar-nav .nav-link.active {
+    font-weight: bold;
+    color: white !important; 
+}
+
+.navbar-nav .nav-link {
+    color: gray !important; 
+}
