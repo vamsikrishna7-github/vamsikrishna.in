@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap');
+*{
+    font-family: Fira Code;
+    font-style: normal;
+}
+/* global color */
+.passage-text {
+    color: #abb2bf !important;
+}
+.hilate-text {
+    color: #4c6bc8 !important;
+}
+
+/* hr line  */
+.hr-line {
+    border-top: 1px solid #4c6bc8 !important;
+    width: 400px !important;
+    margin-top: 15px;
+    margin-left: 15px !important;
+}
+
+/* global button */
+.custom-buttons {
+    border-radius: 0;
+    border: 1px solid #5F86FA !important;
+    color: white !important;
+    background-color: transparent;
+    padding: 6px 11px;
+    transition: all 0.9s ease-in-out; /* Smooth transition */
+}
+
+.custom-buttons:hover {
+    background-color: #7f96dc;
+    color: white;
+    
+}
+
+
+body {
+    background-color: #282c33 !important;
+}
+/* fixed contact buttons with vertical-line */
+.vertical-line {
+    border-left: 1.5px solid #abb2bf; 
+    height: 170px; 
+    margin-left: 11px;
+  }
+.contact-buttons img {
+    filter: brightness(0) invert(0.7);
+    transition: filter 0.3s ease; 
+  }
+  
+.contact-buttons img:hover {
+    filter: brightness(0) invert(1);
+  }
+@media(max-width: 622px) {
+    .side-contact-bar {
+        display: none !important;
+    }
+}
+
+/* navbar */
+.navbar{
+    background-color: #282c33 !important;
+}
+
+div .custom-color{
+    color: white;
+}
+
+
+
+
+
+.navbar-nav .nav-link {
+    color: gray !important; 
+}
+.card{
+    color: #282C33;
+}
+
+
+
+.transparent-table th, .transparent-table td {
+    background-color: transparent !important;
+}
+
+
+html{
+    scroll-behavior: smooth;
+}
+.navbar-nav .nav-link.active {
+    font-weight: bold;
+    color: white !important; 
+}
+
+
+/* footer */
+footer {
+    border-top: 1px solid #abb2bf;
+}

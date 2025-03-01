@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap');
+*{
+    font-family: Fira Code;
+    font-style: normal;
+}
+body{
+    background-color: #282C33;
+}
+.custom-placeholder::placeholder {
+    color: gray;
+    opacity: 1; /* Ensures full opacity */
+}
+.htag{
+    color: #5F86FA;
+
+}
