@@ -1,28 +1,37 @@
-document.addEventListener("DOMContentLoaded", function () {
-    let sections = document.querySelectorAll("div[id]"); 
-    let navLinks = document.querySelectorAll(".navbar-nav .nav-link");
+window.addEventListener('resize', resize);
 
-    function changeActiveSection() {
-        let currentSection = "";
+function resize() {
+    console.log('resize:', window.innerWidth);
+}
 
-        sections.forEach((section) => {
-            let sectionTop = section.offsetTop - 150; 
-            if (window.scrollY >= sectionTop) {
-                currentSection = section.getAttribute("id");
-            }
-        });
+resize();
+console.log('Hello');
 
-        navLinks.forEach((link) => {
-            link.classList.remove("active");
-            if (link.getAttribute("href").substring(1) === currentSection) {
-                link.classList.add("active");
-            }
-        });
+// about section
+function knowmore(link) {
+    const moreInfo = document.querySelector('.display-text');
+    
+    if (!moreInfo.classList.contains('show')) {
+        moreInfo.classList.add('show');
+        link.innerHTML = "Read less";
+    } else {
+        moreInfo.classList.remove('show');
+        link.innerHTML = "Know more";
     }
+}
 
-    window.addEventListener("scroll", changeActiveSection);
-});
+// contact section form
+function validateEmail(input) {
+    const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    const submit = document.querySelector('#submit');
+    
+    input.classList.remove('border-secondary', 'border-danger', 'border-success');
 
-window.addEventListener("resize", ()=>{
-    console.log(window.innerWidth);
-})
+    if (!emailPattern.test(input.value.trim())) {
+        input.classList.add('border-danger');
+        submit.classList.add('disabled');
+    } else {
+        input.classList.add('border-success');
+        submit.classList.remove('disabled');
+    }
+}

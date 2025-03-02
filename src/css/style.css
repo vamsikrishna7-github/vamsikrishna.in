@@ -26,7 +26,7 @@
     color: white !important;
     background-color: transparent;
     padding: 6px 11px;
-    transition: all 0.9s ease-in-out; /* Smooth transition */
+    transition: all 0.9s ease-in-out;
 }
 
 .custom-buttons:hover {
@@ -57,6 +57,60 @@ body {
     .side-contact-bar {
         display: none !important;
     }
+}
+
+
+.quote-home {
+    position: relative;
+    margin: 7%;
+    padding: 3%;
+    height: 55px;
+    width: 55% !important;
+    border: 1px solid #abb2bf;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center;
+    z-index: 1;
+}
+
+.author {
+    position:absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 25%;
+    border: 1px solid #abb2bf;
+    right: -1px;
+    bottom: -100%;
+    z-index: 3;
+}
+
+
+.quote-home::before,
+.quote-home::after {
+    position: absolute;
+    font-size: 32px;
+    color: #abb2bf; 
+    font-weight: bold;
+}
+
+.quote-home::before {
+    content: "❝"; 
+    background-color: #282c33;
+    width: 25px !important;
+    top: -17px;
+    left: 6px;
+}
+
+.quote-home::after {
+    content: "❞";
+    background-color: #282c33;
+    width: 25px !important;
+    bottom: -32px;
+    right: 6px;
+    z-index: 2;
 }
 
 /* navbar */
@@ -94,8 +148,92 @@ html{
     color: white !important; 
 }
 
+/* about section  */
+#link-hover:hover {
+    color: rgb(71, 71, 224) !important;
+}
+
+.display-text {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity 0.5s ease-in-out, max-height 0.5s ease-in-out;
+}
+
+.display-text.show {
+    opacity: 1;
+    max-height: 500px;
+}
+
+/* Skill Section */
+
+.skill-table {
+    
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    border: 1px solid #abb2bf;
+    transition: all 0.3s ease-in-out;
+}
+
+.skill-table h5 {
+    color: #4c6bc8 !important;
+    margin-bottom: 5px;
+}
+
+.skill-table p {
+    color: #abb2bf;
+    margin-bottom: 0;
+}
+
+.skill-table:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: scale(1.03);
+}
+
+.skill-table thead {
+    border: 1px solid #abb2bf;
+    font-weight: bold;
+}
+
+.skill-table th,
+.skill-table td {
+    background-color: transparent;
+}
+
+
+
+/* contact section */
+.custom-placeholder::placeholder {
+    color: #abb2bf;
+    opacity: 1; 
+}
+
+.form-control:focus {
+    box-shadow: none !important;
+    border: 1px solid #ced4da !important;
+}
+
+.form-control.border-danger:focus {
+    border: 1px solid #dc3545 !important;
+}
+
+.form-control.border-success:focus {
+    border: 1px solid #28a745 !important;
+}
+
 
 /* footer */
 footer {
     border-top: 1px solid #abb2bf;
 }
+
+@media(max-width: 305px){
+    #footer-mail {
+        font-size: 13px!important;
+    }
+    /* about section last passage */
+    #hide-info {
+        display: none !important;
+    }
+}
+

@@ -4,11 +4,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Vamsi Krishna</title>
+    <link type="image/png" sizes="16x16" rel="icon" href=".../icons8-developer-color-16.png"> <link type="image/png" sizes="32x32" rel="icon" href=".../icons8-developer-color-32.png"> <link type="image/png" sizes="96x96" rel="icon" href=".../icons8-developer-color-96.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="./src/css/style.css">
   </head>
   <body>
 
+    <!-- side vertical contact links -->
     <div class="ms-4 side-contact-bar position-fixed">
       <div class="vertical-line"></div>
       <div class="contact-buttons d-flex flex-column">
@@ -18,6 +20,7 @@
       </div>
     </div>
 
+    <!-- navbar division -->
     <div class="container">
       <nav class="navbar navbar-expand-sm position-sticky top-0 z-3  ">
         <div class="container">
@@ -35,42 +38,36 @@
           </div>
         </div>
       </nav>
+    </div>
 
       <!-- home_section -->
-      <div class="container border" id="home">
+    <section id="home">
+      <div class="container border">
         <div class="d-md-inline-flex align-items-center ">
 
           <div class="mt-4 mb-0 mx-lg-5 flex-grow-1">
             <div class="h3 text-white">VamsiKrishna is a <span class="hilate-text">Back-End Developer</span> and <span class="hilate-text">Front-End Developer</span></div>
-            <p class="passage-text">Transforming ideas into interactive web solutions with Django, MySQL, and the magic of HTML, CSS, and JavaScript.</p>
+            <p class="passage-text">Building interactive and responsive web solutions with Django, MySQL, Bootstrap, HTML, CSS, and JavaScript.Passionate about full-stack development, I specialize in creating seamless user experiences and dynamic web applications. Open to work and job opportunities!</p>
             <a href="#" class="custom-buttons btn btn-outline-primary border-0">Contact me!!</a>
           </div>
           
           <div class="text-center">
-            <img src="./src/img/dhero.png" class="p-1" alt="Img not found" style="width: 280px; height: 290px;"><br>
+            <img id="home-img" src="./src/img/dhero.png" class="p-1" alt="Img not found" ><br>
             <div class="d-inline passage-text  border border-bottom p-1"><span class="bg-primary text-primary">. </span>&#8203; Currently working on <Strong class="text-white">Portfolio</Strong></div>
           </div>
         </div>
       </div>
 
-      <div class="container border">
-        <div class="d-flex flex-fill flex-column mt-4 mb-0 mx-lg-5">
-          <div class="border-top my-3 border-secondary"></div>
-          <div class="h5 text-white">
-            Hi, I’m <span class="hilate-text">Vamsi Krishna Nagidi</span>, a recent IT graduate from <span class="hilate-text">Anil Neerukonda Institute Of Technology and Sciences</span>.
-          </div>
-          <p class="text-secondary">
-            Skilled in back-end (Django, MySQL) and front-end (Bootstrap, JavaScript, HTML, CSS) development. Proficient in Java and Python with experience in Git. Published research on Blockchain-based Certificate Validation. Open to internships, job opportunities, and projects.
-          </p>
-          <div class="d-inline-block ">
-            <a href="#" class="btn btn-outline-primary text-white rounded-0 ms-0 m-2">Download CV</a>
-            <a href="#" class="btn btn-outline-primary text-white rounded-0 ms-0 m-2">LinkedIn</a>
-            <a href="#" class="btn btn-outline-primary text-white rounded-0 ms-0 m-2">GitHub</a>
-            <a href="#" class="btn btn-outline-primary text-white rounded-0 ms-0 m-2">Email Me</a>
-          </div>
+      <div class="quote d-flex justify-content-center vh-100">
+        <div class="text-white quote-home">Simplicity is the soul of efficiency
+            <div class="author text-white">- Austin Freeman</div>
         </div>
       </div>
-      <!-- project_section -->
+
+    </section>
+
+    <!-- project_section -->
+    <section id="projects">
       <div class="container border my-3" id="projects">
         <div class="d-flex justify-content-between mx-lg-5 ">
           <div class="h3 text-white"><span class="hilate-text">#</span>projects</div>
@@ -124,19 +121,23 @@
             </div>
           </div>
       </div>
-      <!-- about_section -->
-      <div class="container border text-white mt-2 px-lg-5" id="about">
+    </section>
+
+    <!-- about_section -->
+    <section id="about">
+      <div class="container border text-white mt-2 px-lg-5">
         <div class="d-flex">
           <h3><span class="hilate-text">#</span>about</h3>
-          <hr class="flex-grow-1 hilate-text border-3 mx-3">
-          <hr class="border-0 mx-3"style="width: 30%;">
+          <div class="hr-line"></div>
         </div>
         <div class="d-md-flex d-sm-block pe-3">
           <div class="p-2 flex-fill">
-            <p class="text-secondary">Hello, i'm Vamsi krishna!</p>
-            <p class="text-secondary">An IT graduate from Anil Neerukonda Institute of Technology and Sciences with a passion for full-stack development and cybersecurity. With a GPA of 7.5 and certifications in Python, SQL, JavaScript, and problem-solving from HackerRank, I’ve developed strong skills in backend development using Django and MySQL, as well as frontend design with Bootstrap, HTML, CSS, and JavaScript.</p>
-            <p class="text-secondary">My hands-on experience includes working with Linux tools like nMap, Burp Suite, and Metasploit Framework, enhancing my problem-solving abilities and technical expertise. With a foundation built on both academic knowledge and practical exposure, I’m eager to explore exciting opportunities in internships, tech projects, and full-time roles in the industry.</p>
-            <a href="#" class="btn btn-outline-primary text-white rounded-0 ">CV &rarr;</a>
+            <p class="passage-text">Hello, i'm Vamsi krishna!</p>
+            <p class="passage-text">A passionate full-stack developer with skills in Python Django, Java, HTML, CSS, JavaScript, and Bootstrap. I also am proficient with MySQL and SQLite and have hands-on experience for Git. My interests also branch out to cybersecurity, where I have worked with Nmap, BurpSuite, becn Metasploit. I am very curious and enjoy complex problems which makes me excited to think about new challenges in the realms of web development and cybersecurity.</p>
+            <p class="passage-text display-text">Some projects I have worked on include Gameon, an interactive puzzle application that was built for soft skill evaluation, and a Blockchain Certificate Validation System that adds a layer of security and transparency to certificate validation through Ethereum smart contracts and IPFS storage. Recently, I worked on a Dynamic Portfolio Website wherein I integrated Django, SQLite, Bootstrap, and Javascript. The website displays changes instantly and is fully responsive. These projects have developed my understanding of backend logic, database management, and UI design.</p>
+            <a id="link-hover" class="btn btn-link text-decoration-none hilate-text" onclick="knowmore(this)">Know more</a>
+            <p id="hide-info" class="passage-text">Aside from my development work, I have participated in an Ethical Hacking workshop at JNTUK Kakinada, where I practiced the essentials of penetration testing and cybersecurity techniques. I also hold</p>
+            <button class="btn btn-outline-primary rounded-0 custom-buttons" type="button">CV &rarr;</button>
           </div>
           <div class="p-2 flex-fill d-md-flex text-center align-items-center ">
             <img src="./src/img/ahero.png" alt="" class="img border-bottom border-primary mb-3" style="width: 290px; height: 300px;">
@@ -144,65 +145,164 @@
           </div>
         </div>
       </div>
-      <!-- skills_section -->
-      <div class="container border text-white mt-3 px-lg-5">
-        <div class="d-flex">
-          <h3 class=""><span class="hilate-text">#</span>skills</h3>
-          <hr class="flex-grow-1 hilate-text border-3 mx-3">
-          <hr class="border-0 mx-3"style="width: 30%;">
-        </div>
-        <div class="d-md-flex align-items-start flex-sm-fill  border">
-            <table class="table border border-secondary transparent-table m-2">
-              <tr>
-                <td class="text-white">Languages</td>
-              </tr>
-              <tr>
-                <td class="text-secondary">Python, Java, JavaScript</td>
-              </tr>
-            </table>
-
-            <table class="table border border-secondary transparent-table m-2">
-              <tr>
-                <td class="text-white">Other</td>
-              </tr>
-              <tr>
-                <td class="text-secondary">HTML, CSS, Linux Commands</td>
-              </tr>
-            </table>
-          
-            <table class="table border border-secondary transparent-table m-2">
-              <tr>
-                <td class="text-white">Database</td>
-              </tr>
-              <tr>
-                <td class="text-secondary">Sql, MySql</td>
-              </tr>
-            </table>
-            <table class="table border border-secondary transparent-table m-2">
-              <tr>
-                <td class="text-white">Frameworks</td>
-              </tr>
-              <tr>
-                <td class="text-secondary">Bootstrap, Django</td>
-              </tr>
-            </table>
-            <table class="table border border-secondary transparent-table m-2">
-              <tr>
-                <td class="text-white">Tools</td>
-              </tr>
-              <tr>
-                <td class="text-secondary">VScode, Git, GitHub </td>
-              </tr>
-            </table>
-          </div>          
+    </section>
+    
+<!-- Skills Section -->
+<section id="skills" class="py-5">
+  <div class="container p-4">
+    <div class="row">
+      <div class="d-flex text-white h4 align-items-center">
+        <span class="hilate-text">#</span>Skills
+        <div class="hr-line mt-0"></div>
       </div>
+    </div>
+
+    <div class="row mt-4">
+      <!-- Left Column -->
+      <div class="col-md-6">
+        <table class="skill-table col-12 table">
+          <thead>
+            <tr>
+                <td class="text-white">Languages</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="passage-text">
+                Python <img width="24" height="25" src="https://img.icons8.com/color/144/python--v1.png" alt="python--v1"/>
+                Java <img width="25" height="25" src="https://img.icons8.com/color/144/java-coffee-cup-logo--v1.png" alt="java-coffee-cup-logo--v1"/> 
+                JavaScript <img width="25" height="25" src="https://img.icons8.com/color/144/javascript--v1.png" alt="javascript--v1"/></td>
+            </tr>
+          </tbody>
+        </table>
+        <table class="skill-table col-12 table">
+          <thead>
+            <tr>
+                <td class="text-white">Databases</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="passage-text">
+                MySQL <img width="25" height="25" src="https://img.icons8.com/color/144/my-sql.png" alt="my-sql"/>
+                SqQLite <img width="25" height="25" src="https://img.icons8.com/ios/500/sqlite.png" alt="sqlite"/>
+                Oracle <img width="25" height="25" src="https://img.icons8.com/color/144/oracle-logo.png" alt="oracle-logo"/>
+            </tr>
+          </tbody>
+        </table>
+        <table class="skill-table col-12 table">
+          <thead>
+            <tr>
+                <td class="text-white">Web Development</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="passage-text">
+                HTML <img width="25" height="25" src="https://img.icons8.com/color/144/html-5--v1.png" alt="html-5--v1"/>
+                CSS <img width="25" height="25" src="https://img.icons8.com/color/144/css3.png" alt="css3"/>
+                Bootstrap <img width="25" height="25" src="https://img.icons8.com/color/144/bootstrap--v2.png" alt="bootstrap--v2"/>
+                Django <img width="25" height="25" src="https://img.icons8.com/external-tal-revivo-green-tal-revivo/72/external-django-a-high-level-python-web-framework-that-encourages-rapid-development-logo-green-tal-revivo.png" alt="external-django-a-high-level-python-web-framework-that-encourages-rapid-development-logo-green-tal-revivo"/>
+            </tr>
+          </tbody>
+        </table>
+        <table class="skill-table col-12 table">
+          <thead>
+            <tr>
+                <td class="text-white">IDEs</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="passage-text">
+                VS Code <img width="25" height="25" src="https://img.icons8.com/color/144/visual-studio-code-2019.png" alt="visual-studio-code-2019"/>
+                Eclipse <img width="25" height="25" src="https://img.icons8.com/officexs/160/java-eclipse.png" alt="java-eclipse"/>
+                Atom  <img width="25" height="25" src="https://img.icons8.com/color/144/react-native.png" alt="react-native"/>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Right Column -->
+      <div class="col-md-6">
+        <table class="skill-table col-12 table">
+          <thead>
+            <tr>
+                <td class="text-white">Operating Systems</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="passage-text">
+                Windows <img width="25" height="25" src="https://img.icons8.com/color/144/windows-10.png" alt="windows-10"/>
+                Linux (CLI Familiar) <img width="25" height="25" src="https://img.icons8.com/color/96/linux--v1.png" alt="linux--v1"/>
+                macOS <img width="25" height="25" src="https://img.icons8.com/fluency/48/mac-os.png" alt="mac-os"/>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <table class="skill-table col-12 table">
+          <thead>
+            <tr>
+                <td class="text-white">Version Control</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="passage-text">
+                Git <img width="25" height="25" src="https://img.icons8.com/color/144/git.png" alt="git"/>
+                GitHub <img width="25" height="25" src="https://img.icons8.com/fluency/144/github.png" alt="github"/>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <table class="skill-table col-12 table">
+          <thead>
+            <tr>
+                <td class="text-white">Networking</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="passage-text">
+                TCP/IP <img width="25" height="25" src="https://img.icons8.com/ios/100/ipv6.png" alt="ipv6"/>
+                HTTP <img width="25" height="25" src="https://img.icons8.com/external-outline-black-m-oki-orlando/64/external-http-web-services-outline-outline-black-m-oki-orlando.png" alt="external-http-web-services-outline-outline-black-m-oki-orlando"/>
+                FTP <img width="25" height="25" src="https://img.icons8.com/color/96/ftp.png" alt="ftp"/>
+                SSH <img width="25" height="25" src="https://img.icons8.com/fluency/96/ssh.png" alt="ssh"/>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <table class="skill-table col-12 table">
+          <thead>
+            <tr>
+                <td class="text-white">Security</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="passage-text">
+                Nmap <img width="25" height="25" src="https://img.icons8.com/color/144/nmap.png" alt="nmap"/>
+                Burp Suite <img width="25" height="25" src="https://img.icons8.com/ios-filled/150/burp-suite.png" alt="burp-suite"/>
+                Metasploit <img width="25" height="25" src="https://img.icons8.com/fluency/96/metasploit.png" alt="metasploit"/>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+    
        <!-- publications_section -->
+    <section id="publications">    
       <div class="container border mt-3 mb-3 px-lg-5">
         <div class="d-flex text-white h4">
           <span class="hilate-text">#</span>publications
-          <hr class="flex-grow-1 hilate-text border-3 mx-3">
-          <hr class="border-0 mx-3"style="width: 30%;">
-        </div>
+          <div class="hr-line"></div>
+        </div><br>
 
         <div class="text-white">
           <h5>"<span class="hilate-text">Certificate Generation and Validation Using Blockchain</span>," TIJER International Research Journal, Vol. 11, Issue 4, April 2024.</h4>
@@ -222,43 +322,65 @@
 
         </div>
       </div>
+      <br>
+    </section>  
+    
       <!-- certificats_section -->
+    <section id="certification">  
       <div class="container border mt-2 px-lg-5">
         <div class="d-flex text-white">
           <span class="hilate-text h4">#</span><h4>certifications and training</h4>
-          <hr class="flex-grow-1 hilate-text border-3 mx-3">
-          <hr class="border-0 mx-3"style="width: 10%;">
-        </div>
-        <ul class="text-white">
-          <li class="">May-Sep 2023 – Earned the TalentNext Wipro Java Full Stack Certification</li>
-          <a href="#" class="btn-link text-decoration-none">View Certificate (PDF)</a>
-          <li>Apr 2022-Jan 2023 – Achieved HackerRank Certifications in: </li>
-          <ul class="text-secondary">
-            <li>Python – <a href="#" class="btn-link text-decoration-none">View Certificate</a></li>
-            <li>SQL – <a href="#" class="btn-link text-decoration-none">View Certificate</a></li>
-            <li>JavaScript – <a href="#" class="btn-link text-decoration-none">View Certificate</a></li>
-            <li>Problem Solving (Basic) – <a href="#" class="btn-link text-decoration-none">View Certificate</a></li>
-          </ul>
-          <li>Jul-Dec 2020 – Completed Industrial Training in Diploma C and Java at CDST Computer Education, scoring 79%</li>
-          <a href="#" class="btn-link text-decoration-none">View Certificate (PDF)</a>
-        </ul>
-      </div>
-      <!-- contact_section -->
-      <div class="container border mt-3 mb-5 px-lg-5" style="height: 650px;" id="contact">
-        <div class="d-flex text-white h4">
-          <span class="hilate-text">#</span>contact-me
-          <hr class="flex-grow-1 hilate-text border-3 mx-3">
-          <hr class="border-0 mx-3"style="width: 10%;">
+          <div class="hr-line"></div>
         </div>
         <br>
-        <p class="text-secondary border w-75 h-50 d-flex align-items-center p-2">I’m interested in freelance, job, and internship opportunities. However, if you have other requests or questions, don’t hesitate to reach out!</p>
-        <div class="d-flex align-items-center mt-4 ">
-          <p class="border border-secondary text-white p-2 h-50 d-flex flex-column ">Message me here <br> <span class="text-secondary"><img src="./src/img/icons8-email-24.png" alt="" class="img" style="width: 25px; height: 25px;"> VamsiKrishna.nagidi@gmail.com</span>
-           <span class="text-secondary"><img src="./src/img/icons8-linkedin-26.png" alt="" class="img" style="width: 22px; height: 22px;"> VamsiKrishna.nagidi@gmail.com</span>
-          </p>
-        </div>
+        <ul class="text-white">
+          <li class="">May-Sep 2023 – Earned the TalentNext Wipro Java Full Stack Certification</li>
+          <a href="#" class="btn-link text-decoration-none hilate-text">View Certificate (PDF)</a>
+          <li>Apr 2022-Jan 2023 – Achieved HackerRank Certifications in: </li>
+          <ul class="text-secondary">
+            <li>Python – <a href="#" class="btn-link text-decoration-none hilate-text">View Certificate</a></li>
+            <li>SQL – <a href="#" class="btn-link text-decoration-none hilate-text">View Certificate</a></li>
+            <li>JavaScript – <a href="#" class="btn-link text-decoration-none hilate-text">View Certificate</a></li>
+            <li>Problem Solving (Basic) – <a href="#" class="btn-link text-decoration-none hilate-text">View Certificate</a></li>
+          </ul>
+          <li>Jul-Dec 2020 – Completed Industrial Training in Diploma C and Java at CDST Computer Education, scoring 79%</li>
+          <a href="#" class="btn-link text-decoration-none hilate-text">View Certificate (PDF)</a>
+        </ul>
       </div>
-    </div>
+    </section> 
+
+    <!-- contacts section -->
+    <section id="contacts">
+      <div class="container-lg container   p-lg-5 p-3 d-flex flex-column justify-content-center ">
+        <h4 class="text-white ps-2"><span class="hilate-text">/</span>contact-me</h4>
+        <p class="passage-text ps-2">I’m always open to new opportunities and collaborations. Feel free to reach out with any questions, ideas, or just to connect. Looking forward to hearing from you!</p>
+        <form action="submit" method="POST">
+        <div class="row  p-2">
+          <div class="col pe-1">
+            <input type="text" name="name" class="form-control rounded-0 bg-transparent custom-placeholder text-white border-secondary" placeholder="Name" required>
+          </div>
+          <div class="col">
+            <input type="text" name="email" class="form-control rounded-0 bg-transparent custom-placeholder text-white border-secondary" placeholder="Email" onkeyup="validateEmail(this)" required>
+          </div>
+        </div>
+        <div class="row  p-2">
+          <div class="col">
+            <input type="text" name="title" class="form-control bg-transparent rounded-0 text-white custom-placeholder border-secondary" placeholder="Title" required>
+          </div>
+        </div>
+        <div class="row  p-2">
+          <div class="col">
+            <textarea name="message" id="" class="form-control bg-transparent rounded-0 border border-secondary custom-placeholder text-white" placeholder="Message" style="height: 110px;" required></textarea>
+          </div>
+        </div>
+        <div class="row  p-2">
+          <div class="col">
+            <button id="submit" class="btn btn-outline-primary rounded-0 custom-buttons" type="submit">Send</button>
+          </div>
+        </div>
+        </form>
+      </div>
+    </section>
     
     <!-- footer section -->
     <footer class="footer text-white py-4">
@@ -267,7 +389,7 @@
         <!-- Left Side -->
         <div>
           <strong>Vamsi Krishna</strong>  
-          <p class="mb-1">vamsikrishna.nagidi@gmail.com</p>
+          <p id="footer-mail" class="mb-1">vamsikrishna.nagidi@gmail.com</p>
           <p class="mb-0 passage-text">Front-end & Back-end Developer</p>
         </div>
         
