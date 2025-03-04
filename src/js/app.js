@@ -35,3 +35,26 @@ function validateEmail(input) {
         submit.classList.remove('disabled');
     }
 }
+
+// global view all 
+function viewAll(link) {
+    const services = document.querySelectorAll('.show-hide');
+
+    if (!link.classList.contains('active')) {
+        link.classList.add('active');
+        services.forEach(service => {
+            service.classList.add('active'); // Apply fade-in effect
+            service.style.display = "block"; // Ensure it's visible
+        });
+        link.innerHTML = "View less <img width='20' height='20' src='./src/img/services/view-all.png' alt='show-all-views'/>";
+    } else {
+        link.classList.remove('active');
+        services.forEach(service => {
+            service.classList.remove('active'); // Fade-out effect
+            setTimeout(() => {
+                service.style.display = "none"; // Hide after animation
+            }, 500); // Delay matches transition duration
+        });
+        link.innerHTML = "View all <img width='20' height='20' src='./src/img/services/view-all.png' alt='show-all-views'/>";
+    }
+}

@@ -40,6 +40,7 @@
       </nav>
     </div>
 
+  <div class="container">
       <!-- home_section -->
     <section id="home">
       <div class="container border">
@@ -51,10 +52,10 @@
             <a href="#" class="custom-buttons btn btn-outline-primary border-0">Contact me!!</a>
           </div>
           
-          <div class="text-center">
+          <!-- <div class="text-center">
             <img id="home-img" src="./src/img/dhero.png" class="p-1" alt="Img not found" ><br>
             <div class="d-inline passage-text  border border-bottom p-1"><span class="bg-primary text-primary">. </span>&#8203; Currently working on <Strong class="text-white">Portfolio</Strong></div>
-          </div>
+          </div> -->
         </div>
       </div>
 
@@ -68,60 +69,111 @@
 
     <!-- project_section -->
     <section id="projects">
-      <div class="container border my-3" id="projects">
-        <div class="d-flex justify-content-between mx-lg-5 ">
-          <div class="h3 text-white"><span class="hilate-text">#</span>projects</div>
-          <hr class="flex-grow-1 hilate-text border-3 mx-3">
-          <hr class="border-0 mx-3"style="width: 30%;">
-          <a href="#" class="text-white text-decoration-none mt-1 ">View all &rarr;</a>
+      <div class="container border my-3">
+        <div class="d-flex text-white">
+          <h3><span class="hilate-text">#</span>projects</h3>
+          <div class="hr-line"></div>
         </div>
-        
-        
-          <div class="d-sm-inline d-md-flex mx-lg-5 ">
-            <div class="card me-2 border border-secondary rounded-0 text-white bg-transparent mt-3">
-              <img src="./src/img/c1.jpg" class="card-img-top rounded-0" alt="card_img_not_found">
-              
-              <ul class="list-group list-group-flush bg-transparent">
-                <li class="list-group-item text-secondary p-2 bg-transparent">An item</li>
-              </ul>
-              
-              <div class="card-body">
-                <h6 class="card-title">Card title</h6>
-                <p class="text-secondary">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-                <a href="#" class="btn btn-outline-primary rounded-0 text-white">Github &rarr;</a>
+        <div class="container my-md-4 my-sm-2">
+          <div class="row g-4"> 
+            
+            <!-- Project Card 1 -->
+            <div class="col-12 col-md-6 col-lg-4"> 
+              <div class="card h-auto d-flex flex-column">
+                <img src="./src/img/projects/1.jpg" class="card-img-top" alt="Project Image">
+                <div class="card-header passage-text">HTML CSS JavaScript Bootstrap Python Django SQLite</div>
+                <div class="card-body d-flex flex-column flex-grow-1">
+                  <div class="card-title">Dynamic Portfolio with Smart Contact System</div>
+                  <p class="card-text passage-text flex-grow-1">
+                    Dynamic contact form with email automation (User & Admin).
+                    Custom Admin Panel (/admin/) with inbox mail management (view, delete).
+                    Logout & "View Site" option for admin
+                  </p>
+                  <div>
+                    <a target="_blank" href="https://github.com/vamsikrishna7-github/niranjan.in.git" class="btn btn-outline-primary rounded-0 custom-buttons" type="button">
+                      GitHub <img width="20" height="20" src="https://img.icons8.com/ios-filled/100/FFFFFF/source-code.png" alt="GitHub Icon"/>
+                    </a>
+                    <a target="_blank" href="#" class="btn btn-outline-primary rounded-0 custom-buttons" type="button">
+                      Live <img width="20" height="20" src="https://img.icons8.com/material-rounded/192/FFFFFF/youtube-live.png" alt="Live Icon"/>
+                    </a>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+    
+            <!-- Project Card 2 -->
+            <div class="col-12 col-md-6 col-lg-4"> 
+              <div class="card h-auto d-flex flex-column">
+                <img src="./src/img/projects/4.jpg" class="card-img-top" alt="Project Image">
+                <div class="card-header passage-text">SQLite Django HTML Python</div>
+                <div class="card-body d-flex flex-column flex-grow-1">
+                  <div class="card-title">Gameon</div>
+                  <p class="card-text passage-text flex-grow-1">
+                    A 10-level puzzle game built with Django, featuring user authentication, leaderboard, profile page, and admin management
+                  </p>
+                  <div>
+                    <a target="_blank" href="https://github.com/vamsikrishna7-github/gameon.git" class="btn btn-outline-primary rounded-0 custom-buttons" type="button">
+                      GitHub <img width="20" height="20" src="https://img.icons8.com/ios-filled/100/FFFFFF/source-code.png" alt="GitHub Icon"/>
+                    </a>
+                    <a target="_blank" href="#" class="btn btn-outline-primary rounded-0 custom-buttons" type="button">
+                      Live <img width="20" height="20" src="https://img.icons8.com/material-rounded/192/FFFFFF/youtube-live.png" alt="Live Icon"/>
+                    </a>
+                  </div>
+                </div>
               </div>
             </div>
 
-            <div class="card me-2 border border-secondary rounded-0 text-white bg-transparent mt-3">
-              <img src="./src/img/c1.jpg" class="card-img-top rounded-0" alt="card_img_not_found">
-              
-              <ul class="list-group list-group-flush bg-transparent">
-                <li class="list-group-item text-secondary p-2 bg-transparent">An item</li>
-              </ul>
-              
-              <div class="card-body">
-                <h6 class="card-title">Card title</h6>
-                <p class="text-secondary">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-                <a href="#" class="btn btn-outline-primary rounded-0 text-white">Github &rarr;</a>
+            <!-- Project Card 3 -->
+            <div class="col-12 col-md-6 col-lg-4"> 
+              <div class="card h-auto d-flex flex-column">
+                <img src="./src/img/projects/3.jpg" class="card-img-top" alt="Project Image">
+                <div class="card-header passage-text">Ethereum Solidity Truffle Ganache IPFS (Pinata) Streamlit Docker</div>
+                <div class="card-body d-flex flex-column flex-grow-1">
+                  <div class="card-title">Blockchain Certificate Validation</div>
+                  <p class="card-text passage-text flex-grow-1">
+                    Built on Ethereum with IPFS storage, this DApp ensures secure and transparent certificate issuance and verification using smart contracts.
+                  </p>
+                  <div>
+                    <a  target="_blank" href="https://github.com/vamsikrishna7-github/Certificate-Validation-System.git" class="btn btn-outline-primary rounded-0 custom-buttons" type="button">
+                      GitHub <img width="20" height="20" src="https://img.icons8.com/ios-filled/100/FFFFFF/source-code.png" alt="GitHub Icon"/>
+                    </a>
+                    <a target="_blank" href="#" class="btn btn-outline-primary rounded-0 custom-buttons disabled" type="button">
+                      Live <img width="20" height="20" src="https://img.icons8.com/material-rounded/192/FFFFFF/youtube-live.png" alt="Live Icon"/>
+                    </a>
+                  </div>
+                </div>
               </div>
             </div>
-
-            <div class="card me-2 border border-secondary rounded-0 text-white bg-transparent mt-3">
-              <img src="./src/img/c1.jpg" class="card-img-top rounded-0" alt="card_img_not_found">
-              
-              <ul class="list-group list-group-flush bg-transparent">
-                <li class="list-group-item text-secondary p-2 bg-transparent">An item</li>
-              </ul>
-              
-              <div class="card-body">
-                <h6 class="card-title">Card title</h6>
-                <p class="text-secondary">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-                <a href="#" class="btn btn-outline-primary rounded-0 text-white">Github &rarr;</a>
+            
+            <!-- Project Card 4 -->
+            <div class="col-12 col-md-6 col-lg-4"> 
+              <div class="card h-auto d-flex flex-column">
+                <img src="./src/img/projects/2.jpg" class="card-img-top" alt="Project Image">
+                <div class="card-header passage-text">Project Title</div>
+                <div class="card-body d-flex flex-column flex-grow-1">
+                  <div class="card-title">Project 04</div>
+                  <p class="card-text passage-text flex-grow-1">
+                    comming soon....
+                  </p>
+                  <div>
+                    <a target="_blank" href="https://github.com/vamsikrishna7-github/vamsikrishna.in.git" class="btn btn-outline-primary rounded-0 custom-buttons" type="button">
+                      GitHub <img width="20" height="20" src="https://img.icons8.com/ios-filled/100/FFFFFF/source-code.png" alt="GitHub Icon"/>
+                    </a>
+                    <a target="_blank" href="#" class="btn btn-outline-primary rounded-0 custom-buttons" type="button">
+                      Live <img width="20" height="20" src="https://img.icons8.com/material-rounded/192/FFFFFF/youtube-live.png" alt="Live Icon"/>
+                    </a>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
+    
+    
+          </div> 
+        </div> 
       </div>
     </section>
+    
 
     <!-- about_section -->
     <section id="about">
@@ -139,164 +191,336 @@
             <p id="hide-info" class="passage-text">Aside from my development work, I have participated in an Ethical Hacking workshop at JNTUK Kakinada, where I practiced the essentials of penetration testing and cybersecurity techniques. I also hold</p>
             <button class="btn btn-outline-primary rounded-0 custom-buttons" type="button">CV &rarr;</button>
           </div>
-          <div class="p-2 flex-fill d-md-flex text-center align-items-center ">
+          <!-- <div class="p-2 flex-fill d-md-flex text-center align-items-center ">
             <img src="./src/img/ahero.png" alt="" class="img border-bottom border-primary mb-3" style="width: 290px; height: 300px;">
             
-          </div>
+          </div> -->
         </div>
       </div>
     </section>
     
-<!-- Skills Section -->
-<section id="skills" class="py-5">
-  <div class="container p-4">
-    <div class="row">
-      <div class="d-flex text-white h4 align-items-center">
-        <span class="hilate-text">#</span>Skills
-        <div class="hr-line mt-0"></div>
+    <!-- Skills Section -->
+    <section id="skills" class="py-5">
+      <div class="container p-4">
+        <div class="row">
+          <div class="d-flex text-white h4 align-items-center">
+            <span class="hilate-text">#</span>Skills
+            <div class="hr-line mt-0"></div>
+          </div>
+        </div>
+
+        <div class="row mt-4">
+          <!-- Left Column -->
+          <div class="col-md-6">
+            <table class="skill-table col-12 table">
+              <thead>
+                <tr>
+                    <td class="text-white">Languages</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="passage-text">
+                    Python <img width="24" height="25" src="https://img.icons8.com/color/144/python--v1.png" alt="python--v1"/>
+                    Java <img width="25" height="25" src="https://img.icons8.com/color/144/java-coffee-cup-logo--v1.png" alt="java-coffee-cup-logo--v1"/> 
+                    JavaScript <img width="25" height="25" src="https://img.icons8.com/color/144/javascript--v1.png" alt="javascript--v1"/></td>
+                </tr>
+              </tbody>
+            </table>
+            <table class="skill-table col-12 table">
+              <thead>
+                <tr>
+                    <td class="text-white">Databases</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="passage-text">
+                    MySQL <img width="25" height="25" src="https://img.icons8.com/color/144/my-sql.png" alt="my-sql"/>
+                    SqQLite <img width="25" height="25" src="https://img.icons8.com/ios/500/sqlite.png" alt="sqlite"/>
+                    Oracle <img width="25" height="25" src="https://img.icons8.com/color/144/oracle-logo.png" alt="oracle-logo"/>
+                </tr>
+              </tbody>
+            </table>
+            <table class="skill-table col-12 table">
+              <thead>
+                <tr>
+                    <td class="text-white">Web Development</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="passage-text">
+                    HTML <img width="25" height="25" src="https://img.icons8.com/color/144/html-5--v1.png" alt="html-5--v1"/>
+                    CSS <img width="25" height="25" src="https://img.icons8.com/color/144/css3.png" alt="css3"/>
+                    Bootstrap <img width="25" height="25" src="https://img.icons8.com/color/144/bootstrap--v2.png" alt="bootstrap--v2"/>
+                    Django <img width="25" height="25" src="https://img.icons8.com/external-tal-revivo-green-tal-revivo/72/external-django-a-high-level-python-web-framework-that-encourages-rapid-development-logo-green-tal-revivo.png" alt="external-django-a-high-level-python-web-framework-that-encourages-rapid-development-logo-green-tal-revivo"/>
+                </tr>
+              </tbody>
+            </table>
+            <table class="skill-table col-12 table">
+              <thead>
+                <tr>
+                    <td class="text-white">IDEs</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="passage-text">
+                    VS Code <img width="25" height="25" src="https://img.icons8.com/color/144/visual-studio-code-2019.png" alt="visual-studio-code-2019"/>
+                    Eclipse <img width="25" height="25" src="https://img.icons8.com/officexs/160/java-eclipse.png" alt="java-eclipse"/>
+                    Atom  <img width="25" height="25" src="https://img.icons8.com/color/144/react-native.png" alt="react-native"/>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <!-- Right Column -->
+          <div class="col-md-6">
+            <table class="skill-table col-12 table">
+              <thead>
+                <tr>
+                    <td class="text-white">Operating Systems</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="passage-text">
+                    Windows <img width="25" height="25" src="https://img.icons8.com/color/144/windows-10.png" alt="windows-10"/>
+                    Linux (CLI Familiar) <img width="25" height="25" src="https://img.icons8.com/color/96/linux--v1.png" alt="linux--v1"/>
+                    macOS <img width="25" height="25" src="https://img.icons8.com/fluency/48/mac-os.png" alt="mac-os"/>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <table class="skill-table col-12 table">
+              <thead>
+                <tr>
+                    <td class="text-white">Version Control</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="passage-text">
+                    Git <img width="25" height="25" src="https://img.icons8.com/color/144/git.png" alt="git"/>
+                    GitHub <img width="25" height="25" src="https://img.icons8.com/fluency/144/github.png" alt="github"/>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <table class="skill-table col-12 table">
+              <thead>
+                <tr>
+                    <td class="text-white">Networking</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="passage-text">
+                    TCP/IP <img width="25" height="25" src="https://img.icons8.com/ios/100/ipv6.png" alt="ipv6"/>
+                    HTTP <img width="25" height="25" src="https://img.icons8.com/external-outline-black-m-oki-orlando/64/external-http-web-services-outline-outline-black-m-oki-orlando.png" alt="external-http-web-services-outline-outline-black-m-oki-orlando"/>
+                    FTP <img width="25" height="25" src="https://img.icons8.com/color/96/ftp.png" alt="ftp"/>
+                    SSH <img width="25" height="25" src="https://img.icons8.com/fluency/96/ssh.png" alt="ssh"/>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <table class="skill-table col-12 table">
+              <thead>
+                <tr>
+                    <td class="text-white">Security</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="passage-text">
+                    Nmap <img width="25" height="25" src="https://img.icons8.com/color/144/nmap.png" alt="nmap"/>
+                    Burp Suite <img width="25" height="25" src="https://img.icons8.com/ios-filled/150/burp-suite.png" alt="burp-suite"/>
+                    Metasploit <img width="25" height="25" src="https://img.icons8.com/fluency/96/metasploit.png" alt="metasploit"/>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+
+          </div>
+        </div>
       </div>
-    </div>
+    </section>
 
-    <div class="row mt-4">
-      <!-- Left Column -->
-      <div class="col-md-6">
-        <table class="skill-table col-12 table">
-          <thead>
-            <tr>
-                <td class="text-white">Languages</td>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td class="passage-text">
-                Python <img width="24" height="25" src="https://img.icons8.com/color/144/python--v1.png" alt="python--v1"/>
-                Java <img width="25" height="25" src="https://img.icons8.com/color/144/java-coffee-cup-logo--v1.png" alt="java-coffee-cup-logo--v1"/> 
-                JavaScript <img width="25" height="25" src="https://img.icons8.com/color/144/javascript--v1.png" alt="javascript--v1"/></td>
-            </tr>
-          </tbody>
-        </table>
-        <table class="skill-table col-12 table">
-          <thead>
-            <tr>
-                <td class="text-white">Databases</td>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td class="passage-text">
-                MySQL <img width="25" height="25" src="https://img.icons8.com/color/144/my-sql.png" alt="my-sql"/>
-                SqQLite <img width="25" height="25" src="https://img.icons8.com/ios/500/sqlite.png" alt="sqlite"/>
-                Oracle <img width="25" height="25" src="https://img.icons8.com/color/144/oracle-logo.png" alt="oracle-logo"/>
-            </tr>
-          </tbody>
-        </table>
-        <table class="skill-table col-12 table">
-          <thead>
-            <tr>
-                <td class="text-white">Web Development</td>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td class="passage-text">
-                HTML <img width="25" height="25" src="https://img.icons8.com/color/144/html-5--v1.png" alt="html-5--v1"/>
-                CSS <img width="25" height="25" src="https://img.icons8.com/color/144/css3.png" alt="css3"/>
-                Bootstrap <img width="25" height="25" src="https://img.icons8.com/color/144/bootstrap--v2.png" alt="bootstrap--v2"/>
-                Django <img width="25" height="25" src="https://img.icons8.com/external-tal-revivo-green-tal-revivo/72/external-django-a-high-level-python-web-framework-that-encourages-rapid-development-logo-green-tal-revivo.png" alt="external-django-a-high-level-python-web-framework-that-encourages-rapid-development-logo-green-tal-revivo"/>
-            </tr>
-          </tbody>
-        </table>
-        <table class="skill-table col-12 table">
-          <thead>
-            <tr>
-                <td class="text-white">IDEs</td>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td class="passage-text">
-                VS Code <img width="25" height="25" src="https://img.icons8.com/color/144/visual-studio-code-2019.png" alt="visual-studio-code-2019"/>
-                Eclipse <img width="25" height="25" src="https://img.icons8.com/officexs/160/java-eclipse.png" alt="java-eclipse"/>
-                Atom  <img width="25" height="25" src="https://img.icons8.com/color/144/react-native.png" alt="react-native"/>
-            </tr>
-          </tbody>
-        </table>
-      </div>
+    <!-- services section -->
+    <section id="services">
+      <div class="container border my-3">
+        <div class="d-flex text-white">
+          <h3><span class="hilate-text">#</span>what i offer</h3>
+          <div class="hr-line"></div>
+          <a id="view-all" class="text-decoration-none text-primary mt-1 ms-auto"  onclick="viewAll(this)">View all <img width="20" height="20" src="./src/img/services/view-all.png" onclick="viewAll(this)" alt="show-all-views"/></a>
+        </div>
+        <div class="container my-md-4 my-sm-2">
+          <div class="row g-4"> 
+            
+            <!-- service Card 1 -->
+            <div class="col-12 col-md-6 col-lg-4"> 
+              <div class="card h-auto d-flex flex-column">
+                <img src="./src/img/services/1.png" class="card-img-top" alt="service Image">
+                <div class="card-header passage-text">Django Python HTML CSS JavaScript Bootstrap MySQL/SQLite</div>
+                <div class="card-body d-flex flex-column flex-grow-1">
+                  <div class="card-title">Full-Stack Web Development</div>
+                  <p class="card-text passage-text flex-grow-1">
+                    I specialize in building end-to-end web applications with responsive frontends and scalable backends. 
+                    Whether you need a simple website or a complex web app, 
+                    I can deliver a complete solution tailored to your business needs.
+                  </p>
+                  <div>
+                    <a target="_blank" href="#contact" class="btn btn-outline-primary rounded-0 custom-buttons" type="button">
+                      Hire Me <img width="20" height="20" src="./src/img/services/hire-me.png" alt="Hire Me Icon"/>
+                    </a>
+                    <a target="_blank" href="http://65.0.32.155:8000/" class="btn btn-outline-primary rounded-0 custom-buttons" type="button">
+                      Samples <img width="20" height="20" src="./src/img/services/work.png" alt="Samples Icon"/>
+                    </a>
 
-      <!-- Right Column -->
-      <div class="col-md-6">
-        <table class="skill-table col-12 table">
-          <thead>
-            <tr>
-                <td class="text-white">Operating Systems</td>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td class="passage-text">
-                Windows <img width="25" height="25" src="https://img.icons8.com/color/144/windows-10.png" alt="windows-10"/>
-                Linux (CLI Familiar) <img width="25" height="25" src="https://img.icons8.com/color/96/linux--v1.png" alt="linux--v1"/>
-                macOS <img width="25" height="25" src="https://img.icons8.com/fluency/48/mac-os.png" alt="mac-os"/>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-        <table class="skill-table col-12 table">
-          <thead>
-            <tr>
-                <td class="text-white">Version Control</td>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td class="passage-text">
-                Git <img width="25" height="25" src="https://img.icons8.com/color/144/git.png" alt="git"/>
-                GitHub <img width="25" height="25" src="https://img.icons8.com/fluency/144/github.png" alt="github"/>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-        <table class="skill-table col-12 table">
-          <thead>
-            <tr>
-                <td class="text-white">Networking</td>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td class="passage-text">
-                TCP/IP <img width="25" height="25" src="https://img.icons8.com/ios/100/ipv6.png" alt="ipv6"/>
-                HTTP <img width="25" height="25" src="https://img.icons8.com/external-outline-black-m-oki-orlando/64/external-http-web-services-outline-outline-black-m-oki-orlando.png" alt="external-http-web-services-outline-outline-black-m-oki-orlando"/>
-                FTP <img width="25" height="25" src="https://img.icons8.com/color/96/ftp.png" alt="ftp"/>
-                SSH <img width="25" height="25" src="https://img.icons8.com/fluency/96/ssh.png" alt="ssh"/>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-        <table class="skill-table col-12 table">
-          <thead>
-            <tr>
-                <td class="text-white">Security</td>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td class="passage-text">
-                Nmap <img width="25" height="25" src="https://img.icons8.com/color/144/nmap.png" alt="nmap"/>
-                Burp Suite <img width="25" height="25" src="https://img.icons8.com/ios-filled/150/burp-suite.png" alt="burp-suite"/>
-                Metasploit <img width="25" height="25" src="https://img.icons8.com/fluency/96/metasploit.png" alt="metasploit"/>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-
-      </div>
-    </div>
-  </div>
-</section>
-
+                  </div>
+                </div>
+              </div>
+            </div>
     
-       <!-- publications_section -->
+            <!-- service Card 2 -->
+            <div class="col-12 col-md-6 col-lg-4"> 
+              <div class="card h-auto d-flex flex-column">
+                <img src="./src/img/services/2.png" class="card-img-top" alt="service Image">
+                <div class="card-header passage-text">Django Python Django REST Framework MySQL/SQLite</div>
+                <div class="card-body d-flex flex-column flex-grow-1">
+                  <div class="card-title">Django Backend Web Development</div>
+                  <p class="card-text passage-text flex-grow-1">
+                    I develop secure, scalable, and maintainable backend systems using Django and Python. 
+                    From database design to server-side logic, 
+                    I ensure your application runs smoothly and efficiently.
+                  </p>
+                  <div>
+                    <a target="_blank" href="#contact" class="btn btn-outline-primary rounded-0 custom-buttons" type="button">
+                      Hire Me <img width="20" height="20" src="./src/img/services/hire-me.png" alt="Hire Me Icon"/>
+                    </a>
+                    <a target="_blank" href="http://65.0.32.155:8000/" class="btn btn-outline-primary rounded-0 custom-buttons disabled" type="button">
+                      Samples <img width="20" height="20" src="./src/img/services/work.png" alt="Samples Icon"/>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- service Card 3 -->
+            <div class="col-12 col-md-6 col-lg-4"> 
+              <div class="card h-auto d-flex flex-column">
+                <img src="./src/img/services/3.png" class="card-img-top" alt="service Image">
+                <div class="card-header passage-text">Django Python HTML CSS JavaScript Bootstrap MySQL/SQLite</div>
+                <div class="card-body d-flex flex-column flex-grow-1">
+                  <div class="card-title">Custom Web Applications Development</div>
+                  <p class="card-text passage-text flex-grow-1">
+                    I create custom web applications designed to solve specific business problems. 
+                    Whether it’s a dashboard, CRUD app, or data-driven platform, 
+                    I can build a solution that fits your unique requirements.
+                  </p>
+                  <div>
+                    <a target="_blank" href="#contact" class="btn btn-outline-primary rounded-0 custom-buttons" type="button">
+                      Hire Me <img width="20" height="20" src="./src/img/services/hire-me.png" alt="Hire Me Icon"/>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- service Card 4 -->
+            <div class="col-12 col-md-6 col-lg-4 show-hide"> 
+              <div class="card h-auto d-flex flex-column">
+                <img src="./src/img/services/4.png" class="card-img-top" alt="service Image">
+                <div class="card-header passage-text">HTML CSS JavaScript Bootstrap</div>
+                <div class="card-body d-flex flex-column flex-grow-1">
+                  <div class="card-title">Frontend Development</div>
+                  <p class="card-text passage-text flex-grow-1">
+                    I create responsive, user-friendly, and visually appealing frontends for websites and web applications. 
+                    Using modern technologies, I ensure your site looks great on all devices.
+                  </p>
+                  <div>
+                    <a target="_blank" href="#contact" class="btn btn-outline-primary rounded-0 custom-buttons" type="button">
+                      Hire Me <img width="20" height="20" src="./src/img/services/hire-me.png" alt="Hire Me Icon"/>
+                    </a>
+                    <a target="_blank" href="http://65.0.32.155:8000/" class="btn btn-outline-primary rounded-0 custom-buttons" type="button">
+                      Samples <img width="20" height="20" src="./src/img/services/work.png" alt="Samples Icon"/>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+             <!-- service Card 5 -->
+             <div class="col-12 col-md-6 col-lg-4 show-hide"> 
+              <div class="card h-auto d-flex flex-column">
+                <img src="./src/img/services/5.png" class="card-img-top" alt="service Image">
+                <div class="card-header passage-text">HTML CSS JavaScript Bootstrap Django (for dynamic portfolios)</div>
+                <div class="card-body d-flex flex-column flex-grow-1">
+                  <div class="card-title">Portfolio Website Development</div>
+                  <p class="card-text passage-text flex-grow-1">
+                    I design and develop professional portfolio websites that showcase your work and help you stand out. 
+                    Whether you’re an individual or a business, I’ll create a visually appealing and functional portfolio to attract clients. 
+                  </p>
+                  <div>
+                    <a target="_blank" href="#contact" class="btn btn-outline-primary rounded-0 custom-buttons" type="button">
+                      Hire Me <img width="20" height="20" src="./src/img/services/hire-me.png" alt="Hire Me Icon"/>
+                    </a>
+                    <a target="_blank" href="http://65.0.32.155:8000/" class="btn btn-outline-primary rounded-0 custom-buttons" type="button">
+                      Samples <img width="20" height="20" src="./src/img/services/work.png" alt="Samples Icon"/>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+             <!-- service Card 6 -->
+             <div class="col-12 col-md-6 col-lg-4 show-hide"> 
+              <div class="card h-auto d-flex flex-column">
+                <img src="./src/img/services/6.png" class="card-img-top" alt="service Image">
+                <div class="card-header passage-text">Django Python HTML CSS JavaScript MySQL/SQLite Git</div>
+                <div class="card-body d-flex flex-column flex-grow-1">
+                  <div class="card-title">Website Maintenance and Support</div>
+                  <p class="card-text passage-text flex-grow-1">
+                    I provide ongoing maintenance and support for existing websites and web applications. 
+                    From bug fixes to updates, I ensure your site remains functional and up-to-date.
+                  </p>
+                  <div>
+                    <a target="_blank" href="#contact" class="btn btn-outline-primary rounded-0 custom-buttons" type="button">
+                      Hire Me <img width="20" height="20" src="./src/img/services/hire-me.png" alt="Hire Me Icon"/>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+             <!-- service Card 7 -->
+             <div class="col-12 col-md-6 col-lg-4 show-hide"> 
+              <div class="card h-auto d-flex flex-column">
+                <img src="./src/img/services/7.png" class="card-img-top" alt="service Image">
+                <div class="card-header passage-text">Django REST Framework Python MySQL/SQLite</div>
+                <div class="card-body d-flex flex-column flex-grow-1">
+                  <div class="card-title">REST API Development</div>
+                  <p class="card-text passage-text flex-grow-1">
+                    I build RESTful APIs to enable seamless communication between frontend and backend systems or integrate third-party services. 
+                    My APIs are efficient, secure, and easy to use.
+                  </p>
+                  <div>
+                    <a target="_blank" href="#contact" class="btn btn-outline-primary rounded-0 custom-buttons" type="button">
+                      Hire Me <img width="20" height="20" src="./src/img/services/hire-me.png" alt="Hire Me Icon"/>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+    
+    
+          </div> 
+        </div> 
+      </div>
+    </section>
+    
+    <!-- publications_section -->
     <section id="publications">    
       <div class="container border mt-3 mb-3 px-lg-5">
         <div class="d-flex text-white h4">
@@ -325,7 +549,7 @@
       <br>
     </section>  
     
-      <!-- certificats_section -->
+    <!-- certificats_section -->
     <section id="certification">  
       <div class="container border mt-2 px-lg-5">
         <div class="d-flex text-white">
@@ -350,7 +574,7 @@
     </section> 
 
     <!-- contacts section -->
-    <section id="contacts">
+    <section id="contact">
       <div class="container-lg container   p-lg-5 p-3 d-flex flex-column justify-content-center ">
         <h4 class="text-white ps-2"><span class="hilate-text">/</span>contact-me</h4>
         <p class="passage-text ps-2">I’m always open to new opportunities and collaborations. Feel free to reach out with any questions, ideas, or just to connect. Looking forward to hearing from you!</p>
@@ -382,6 +606,9 @@
       </div>
     </section>
     
+    <hr class="full-width-hr border">
+
+ 
     <!-- footer section -->
     <footer class="footer text-white py-4">
       <div class="container d-flex justify-content-between align-items-center flex-wrap">
@@ -408,7 +635,7 @@
       <!-- Copyright -->
       <p class="text-center mt-3 mb-0 passage-text">© 2024. Made by Vamsi Krishna</p>
     </footer>
-    
+  </div>
 
     <script type="text/javascript" src="./src/js/app.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>

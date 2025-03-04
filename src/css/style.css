@@ -1,8 +1,67 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap');
-*{
-    font-family: Fira Code;
-    font-style: normal;
+
+body {
+    font-family: 'Fira Code', monospace;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20.99px;
+    letter-spacing: 0%;
+    background-color: #282c33;
+
 }
+
+
+/* Center and Restrict Width */
+.container {
+    max-width: 1025px;
+    width: 100%;
+    margin: 0 auto; /* Centers content */
+}
+
+/* Ensure sections take full width inside the container */
+.container section {
+    width: 100%;
+}
+
+/* Navbar Styling */
+.navbar {
+    max-width: 1025px; 
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+a {
+    cursor: pointer;
+}
+
+
+/* Global view all */
+#view-all:hover,
+#view-all:active {
+    color: white !important;
+}
+
+#view-all:hover img,
+#view-all:active img {
+    filter: brightness(0) invert(1);
+}
+
+.show-hide {
+    opacity: 0; /* Initially hidden */
+    transform: translateY(10px); /* Start slightly below */
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+    display: none; /* Ensure it's hidden initially */
+}
+
+.show-hide.active {
+    opacity: 1;
+    transform: translateY(0);
+    display: block; /* Show smoothly */
+}
+
+
+
 /* global color */
 .passage-text {
     color: #abb2bf !important;
@@ -21,6 +80,10 @@
 
 /* global button */
 .custom-buttons {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20.99px;
+    letter-spacing: 0%;
     border-radius: 0;
     border: 1px solid #5F86FA !important;
     color: white !important;
@@ -36,9 +99,6 @@
 }
 
 
-body {
-    background-color: #282c33 !important;
-}
 /* fixed contact buttons with vertical-line */
 .vertical-line {
     border-left: 1.5px solid #abb2bf; 
@@ -148,6 +208,31 @@ html{
     color: white !important; 
 }
 
+/* projects & services section */
+.card {
+    border: 1px solid #abb2bf;
+    border-radius: 0px;
+    background-color: transparent !important;
+    color: white;
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
+}
+.card img {
+    object-fit: cover;
+    border-radius: 0px;
+}
+.card .card-header {
+    background-color: transparent;
+    padding: 10px;
+    border-bottom: 1px solid #abb2bf;
+    border-top: 1px solid #abb2bf;
+}
+.card .card-title {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 31.49px;
+    letter-spacing: 0%;
+}
+
 /* about section  */
 #link-hover:hover {
     color: rgb(71, 71, 224) !important;
@@ -223,7 +308,7 @@ html{
 
 
 /* footer */
-footer {
+.footefull-width-hr {
     border-top: 1px solid #abb2bf;
 }
 
